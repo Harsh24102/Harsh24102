@@ -3,24 +3,29 @@
 ### Data Analyst · ETL Pipelines · Geospatial Data · Python | SQL | Tableau | Power BI
 
 I build data pipelines that turn messy, scattered sources into clean, verified databases, and the
-dashboards and apps people use to act on them. Currently a **Data Analyst at Firmwise Services India
-(client: GAIL India Limited)**, working on SAP/Excel → Oracle ETL and Tableau Server dashboards.
+dashboards, automations and apps people use to act on them, from SAP/Excel → Oracle ETL and
+Tableau Server dashboards for **GAIL India Limited** to an India-wide geospatial data platform.
 
-📍 Noida, India · 🎓 B.Tech CSE (Data Science), UPES · 💼 1.5+ years in data analytics
+📍 Noida, India · 🎓 B.Tech CSE (Data Science), UPES · 💼 2 years in data analytics
 
 ---
 
 ### 🚀 What I'm building now
 
 **CGD Station Data Platform** · *private, in active development*
-An end-to-end platform mapping **CNG stations of City Gas Distribution operators across India**.
+An end-to-end platform mapping **CNG stations of City Gas Distribution operators across India**,
+serving 3,000+ stations today.
 
-- Python extraction pipeline per operator: `discover → fetch → parse → normalize → validate`, with
+- **Extraction:** Python pipeline per operator (`discover → fetch → parse → normalize → validate`), with
   robots.txt **and** Terms-of-Use checks before any source is collected
-- OpenStreetMap geocoding with an honest per-station **precision class** instead of fake exact points
-- **PostgreSQL + PostGIS** database with numbered load batches, a change-audit table and SQL verification checks
-- **FastAPI** backend with spatial "near me" and map-viewport queries, and a **React Native (Expo)** app
-  with List/Map views, shipped as an Android build and a web build for internal testing
+- **Automation:** Prefect flows run a new operator end to end (research report → extraction → audited
+  load), with an **Update** mode that only re-checks what changed and a weekly scheduled refresh
+- **Exact locations:** stations matched to their own pump on **Ola Maps**, confirmed by a second source
+  (OpenStreetMap); every station carries an honest precision class instead of a fake exact point
+- **Database:** PostgreSQL + PostGIS with numbered load batches, dry-run-then-commit loads, backups,
+  a change-audit table and SQL verification checks
+- **App:** FastAPI backend with spatial "near me" queries and a React Native (Expo) app with List/Map views
+  and an **Admin page** to run, approve and track extractions, shipped as an Android build and a web app
 
 ---
 
@@ -30,7 +35,8 @@ An end-to-end platform mapping **CNG stations of City Gas Distribution operators
 |---|---|
 | **Languages** | Python (Pandas, NumPy, Matplotlib, Seaborn), SQL, JavaScript |
 | **Databases** | Oracle, SQL Server (SSMS), PostgreSQL + PostGIS, MySQL, MongoDB |
-| **Data engineering** | ETL pipelines, web scraping (Scrapy, Requests, BeautifulSoup, Playwright), data cleaning & validation, data modeling, geocoding |
+| **Data engineering** | ETL pipelines, workflow automation (Prefect), web scraping (Scrapy, Requests, BeautifulSoup, Playwright), data cleaning & validation, data modeling |
+| **Geospatial** | PostGIS, OpenStreetMap (Nominatim, Overpass), Ola Maps API, GeoJSON |
 | **BI & visualization** | Tableau & Tableau Server, Power BI (DAX), Looker Studio, Excel |
 | **Apps & cloud** | FastAPI, React Native / Expo, Next.js, AWS S3, Firebase, Git / GitHub |
 
@@ -50,7 +56,7 @@ An end-to-end platform mapping **CNG stations of City Gas Distribution operators
 
 ### 💼 Experience
 
-- **Data Analyst**, Firmwise Services India (client: GAIL India Limited) · *Feb 2026 – present*
+- **Data Analyst**, Firmwise Services India (client: GAIL India Limited) · *Feb 2026 – Oct 2026*
 - **Data Analyst**, Arya Fin-Trade Services · *Sep 2024 – Aug 2025*
 - **Data Engineer Intern**, HERE Technologies · *Jun – Jul 2023*
 - **Data Analyst Intern**, Lendingkart Finance · *Jul 2023*
